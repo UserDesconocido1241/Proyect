@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euthena</title>
+    <!-- Font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- font custom -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Butcherman&family=Kirang+Haerang&family=Oswald:wght@200..700&family=Playpen+Sans+Thai:wght@100..800&display=swap" rel="stylesheet">
+     <!-- icon -->
+      <link rel="icon" href="img/brand.png">
+    <!-- Font Oswald -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Butcherman&family=Jura:wght@300..700&family=Kirang+Haerang&family=Oswald:wght@200..700&family=Playpen+Sans+Thai:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="productos.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-main">
+            <div class="nav-left">
+                 <a href="index.html">
+                    <img src="img/brand.png" alt="Euth.brand" class="Euth-brand">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="productos.html"><b>Productos</b></a></li>
+                <li><a href="personal.html"><b>Personal</b></a></li>
+                <li><a href="soporte.html"><b>Soporte</b></a></li>
+            </ul>
+            <ul class="nav-right">
+            </ul>
+        </nav>
+    </div>
+    <audio id="audioPlayer" src="music/Pain.mp3" preload="auto"></audio>
+
+<h1>Productos actualmente</h1>
+    <div class="polos">
+        <div onclick="mostrarPago('brown')" style="cursor:pointer;">
+            <img src="img/pol1.png" alt="Brown Color" />
+            <h2>Brown Color</h2>
+            <p>80</p>
+        </div>
+        <div onclick="mostrarPago('black')" style="cursor:pointer;">
+            <img src="img/pol2.png" alt="Black Color" />
+            <h2>Black Color</h2>
+            <p>80</p>
+        </div>
+        <div>
+            <img src="img/interrogacion.jpg" alt="Pronto..." />
+            <h2>Pronto...</h2>
+            <p>???</p>
+        </div>
+        <div>
+            <img src="img/interrogacion.jpg" alt="Pronto..." />
+            <h2>Pronto...</h2>
+            <p>???</p>
+        </div>
+    </div>
+
+    <!-- whatsaap -->
+       <div class="whatsaap">
+    <a href="https://wa.me/968710007?text=Hola,%20quiero%20más%20información%20sobre%20los%20polos"><img src="img/whatsapp-icon.svg" alt="whatsaap"></a>
+  </div>
+  <!-- Footer -->
+      <section class="social">
+        <p>Follow Euthena</p>
+        <div class="links">
+            <a href="#">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+             <a href="#">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-instagram  "></i>
+            </a>
+        </div>
+    </section>
+    <div class="footer-links">
+  <div class="footer-container">
+    <ul>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="index.html">Lo nuevo</a></li>
+      <li class="volver">
+        <a href="#top" class="btn-volver-arriba"><i class="fas fa-arrow-up"></i> Volver arriba</a>
+      </li>
+    </ul>
+    <ul>
+      <li><a href="personal.html">Acerca de nosotros</a></li>
+      <li><a href="soporte.html">Contáctanos</a></li>
+      <li><a href="#">Reseñas</a></li>
+    </ul>
+  </div>
+</div>
+  <!-- Modal -->
+<div id="modalPago" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span class="modal-close" onclick="cerrarModal()">&times;</span>
+    <h2 id="modalTitulo">Producto</h2>
+    <p class="price" id="modalPrecio">S/. 0</p>
+    
+    <!-- Texto actualizado -->
+    <p class="yape-number">Escanea el QR para pagar por Yape.</p>
+    
+    <!-- Imagen QR centrada -->
+    <img src="img/yape.jpeg" alt="QR Yape" />
+    
+    <!-- Botón WhatsApp actualizado -->
+    <a id="btnWhatsapp" href="#" target="_blank" class="btn-whatsapp">
+      Consultar por WhatsApp
+    </a>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

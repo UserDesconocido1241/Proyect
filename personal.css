@@ -1,0 +1,66 @@
+
+
+/* Sección Personal */
+.personal {
+  padding: 0px 0px;
+  padding-bottom: 20px;
+  background-color: #11111196;
+  text-align: center;
+}
+
+.personal h1{
+  display: block;
+  grid-column: 1 / -1;
+  font-size: 30px;
+  background-color: black;
+  color: white;
+  border-top: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  padding: 20px 20px;
+  margin-top: 0;
+}
+
+
+/* Contenedor Grid */
+.per-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Tarjeta de persona */
+.person {
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.person:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(255, 255, 255, 0.1);
+}
+
+.person img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+}
+
+.person h2 {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin: 15px;;
+}
+
+.person p {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+  margin: 0 15px 20px;
+}

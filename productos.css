@@ -1,0 +1,161 @@
+/* Whatsaap */
+.whatsaap{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+}
+
+ .polos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Tarjeta: contenedor de imagen, h2 y p */
+.polos > div {
+  background-color: #796c4e;       /* color claro de fondo */
+  border-radius: 15px;             /* bordes redondeados */
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* sombra suave */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.polos > div:hover {
+  transform: translateY(-5px); /* levanta la tarjeta al pasar el cursor */
+  box-shadow: 0 15px 25px rgba(99, 92, 64, 0.425);
+}
+
+/* Imagen */
+.polos img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Título */
+.polos h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #333333;
+}
+
+/* Precio */
+.polos p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0c1308;
+}
+
+.polos p::before {
+  content: "s/";
+}
+
+h1{
+  display: block;
+  grid-column: 1 / -1;
+  font-size: 30px;
+  background-color: black;
+  color: white;
+  border-top: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  padding: 20px 20px;
+  margin-top: 0;
+}
+/* Modal background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+  font-family: 'Atma', sans-serif;
+}
+
+/* Modal contenido */
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 30px 40px;
+  border-radius: 15px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+/* Título */
+.modal-content h2 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #333;
+}
+/* Precio */
+.modal-content p.price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 15px 0;
+  color: #555;
+}
+/* Número de Yape */
+.modal-content p.yape-number {
+  margin: 10px 0 20px 0;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #222;
+}
+/* QR Imagen */
+.modal-content img {
+  display: block;
+  margin: 0 auto 25px auto; /* centrado + espacio inferior */
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Botón cerrar */
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.5rem;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.modal-close:hover {
+  color: #000;
+}
+/* Botón pagar WhatsApp */
+.btn-whatsapp {
+  background-color: #25d366;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.btn-whatsapp:hover {
+  background-color: #1ebe57;
+}
+
+@media (max-width: 700px){
+  .polos{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  }

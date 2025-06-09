@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.soporte {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.soporte h1 {
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: #222;
+}
+
+.soporte p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.soporte-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.soporte-form label {
+  font-weight: bold;
+  color: #444;
+}
+
+.soporte-form input,
+.soporte-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.soporte-form button {
+  padding: 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.soporte-form button:hover {
+  background-color: #333;
+}
